@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>renewal</title>
+
+
+
+
+	<style>
+body{
+	background: linear-gradient(to left, #66ffcc 0%, #ffff00 100%);
+	   color:black;
+	   box-sizing: border-box;
+	}
+	.fo{
+	   margin-left: 500px;
+	   background: linear-gradient(to top right, #66ffcc 5%, #ffff00 100%);
+	   padding: 50px;
+	   
+ 
+	}
+	h1{
+ opacity: 0.75;
+	   text-align: center;
+	   background-color: ivory;
+	   padding: 50px;
+	}
+	</style>
+</head>
+<body>
+<h1>Renewal</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="apply.html">Apply</a></li>
+        <li class="active"><a href="Modify.html">Modify</a></li>
+ <li class="active"><a href="renew.html">Renew</a></li>
+ <li class="active"><a href="login.html">Login</a></li>
+ <li class="active"><a href="logout.php">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form method="post" action="Renew.php" enctype = "multipart/form-data">
+
+<table class="fo">
+
+
+<tr><td>Categories</td><td><select name = "dropdown">
+            <option value = "general" selected>General</option>
+            <option value = "exclusive">Exclusive</option>
+         </select></td></tr>
+
+
+<tr><td>Bonafide</td><td><input type = "file" name = "fileupload" required/></td></tr>
+<tr><td>Aadhar card</td><td><input type="text"  name="aadhar" pattern="[0-9]{12}" title="invalid aadhar" required></td></tr>
+<tr><td>Update</td><td><input type="submit" name="Apply" onclick="Function1()"></td></tr>
+</table>
+</form>
+<script>
+function Function1()
+{
+	alert("Updated");
+	}
+</script>
+</body>
+</html>

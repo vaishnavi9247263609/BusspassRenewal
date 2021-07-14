@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" charset="ISO-8859-1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title>Application form</title>
+
+<style>
+   body{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+ 
+      color:black;
+      box-sizing: border-box;
+   }
+   .fo{
+      margin-left: 500px;
+  background: linear-gradient(to top right, #6699ff 10%, #ffffff 97%);
+      padding: 25px 50px 75px;
+      
+
+   }
+   h1{
+      text-align: center;
+    background:linear-gradient(to top right, #6699ff 10%, #ffffff 97%);
+      padding: 50px;
+   }
+@media screen and (max-width: 450px) {
+ h1,body {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+@media screen and(max-width:250px){
+fo{width:0%;
+margin-top:0;}}
+   </style>
+</head>
+<body>
+   <h1>Application form</h1>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="apply.html">Apply</a></li>
+        <li class="active"><a href="Modify.html">Modify</a></li>
+ <li class="active"><a href="renew.html">Renew</a></li>
+ <li class="active"><a href="login.html">Login</a></li>
+ <li class="active"><a href="logout.php">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form method="post" action="apply.php" enctype = "multipart/form-data">
+<table class="fo">
+<tr><td>FirstName</td><td><input type="text" name="fname"></td></tr>
+<tr><td>LastName</td><td><input type="text" name="lname"></td></tr>
+<tr><td>Father's FirstName</td><td><input type="text" name="ffname"></td></tr>
+<tr><td>Father's LastName</td><td><input type="text" name="flname"></td></tr>
+<tr><td>Date of Birth(ddmmyyyy)</td><td><input type="text" name="dob"></td></tr>
+<tr><td>Phone</td><td><input type="text" name="phone" ></td></tr>
+<tr><td>Email</td><td><input type="email" name="mail"></td></tr>
+<tr><td>Gender</td><td><select name = "dropdowng">
+            <option value = "male" selected>Male</option>
+            <option value = "female">Female</option>
+            <option value = "others">Others</option>
+         </select></td></tr>
+<tr><td>Bus Pass Code</td><td><input type="text" name="code"></td></tr>
+<tr><td>Categories</td><td><select name = "dropdown">
+            <option value = "general" selected>General</option>
+            <option value = "exclusive">Exclusive</option>
+         </select></td></tr>
+<tr><td>Institute Name</td><td><input type="text" name="iname" ></td></tr>
+<tr><td>Institute code</td><td><input type="text" name="icode" ></td></tr>
+<tr><td>Course Name</td><td><input type="text" name="cname" ></td></tr>
+<tr><td>Course code</td><td><input type="text" name="ccode" ></td></tr>
+<tr><td>Admission No</td><td><input type="text" name="id" ></td></tr>
+
+<tr><td>Route</td><td><input type="text" name="routef" ></td></tr>
+<tr><td>Routeend</td><td><input type="text" name="routee" ></td></tr>
+<tr><td>Via</td><td><input type="text" name="via" ></td></tr>
+<tr><td>Address</td><td><input type="text" name="add"></td></tr>
+<tr><td>City</td><td><input type="text" name="city" ></td></tr>
+<tr><td>Pincode</td><td><input type="text" name="pincode" ></td></tr>
+<tr><td>Bonafide</td><td><input type = "file" name = "fileupload"   /></td></tr>
+<tr><td>Aadhar card</td><td><input type="text"  name="aadhar" pattern="[0-9]{12}" title="invalid aadhar" required></td></tr>
+<tr><td>Apply</td><td><input type="submit" name="Apply" onclick="Function()"></td></tr>
+</table>
+
+</form>
+<script>
+function Function()
+{
+	alert("Successfully Applied");
+	}
+</script>
+</body>
+</html>

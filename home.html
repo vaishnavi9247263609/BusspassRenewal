@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bus pass system</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+ 
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>e-BUS PASS</h1>
+  <p>We make your journey easier</p> 
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Hello passengers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="apply.html">Apply</a></li>
+        <li class="active"><a href="Modify.html">Modify</a></li>
+ <li class="active"><a href="renew.html">Renew</a></li>
+ <li class="active"><a href="login.html">Login</a></li>
+ <li class="active"><a href="logout.php">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+     
+      <div class="fakeimg">
+<img src="journey.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+
+</div>
+      <p></p>
+      <h3>Some Links</h3>
+      <p></p>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="apply.html">APPLY</a></li>
+        <li><a href="Modify.html">MODIFICATION</a></li>
+        <li><a href="renew.html">RENEWAL</a></li>
+      </ul>
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    <div class="col-sm-8">
+      <h2>TSRTC</h2>
+      <h5>Telangana State Road Transport Corporation is committed to provide consistently high quality of services and to continuously improve the services through a process of teamwork for the utmost satisfaction of the passengers and to attain a position of pre-eminence in the Bus Transport sector.
+
+ </h5>
+      <div class="fakeimg">
+<section>
+<img class="mySlides" src="rtcbhavan.jpg"  class="img-thumbnail"  alt="Cinque Terre" width="500" height="400">
+
+  <img class="mySlides" src="group.jpg" 
+ width="500" height="400">
+  <img class="mySlides" src="map.jpg" "
+  width="500" height="400">
+  <img   class="mySlides" src="transport.jpg" 
+  width="500" height="400">
+</section>
+</div>
+      <h4><b>Instructions to Institutions</b></h4>
+      <p>
+Any change in Name, Address and Courses of the Educational Institution (Schools/Colleges) shall be intimated to TSRTC immediately and to submit the relevant documents to update the same against the institution code in online
+The entire image consisting of the photo along with the signature is required to be scanned and stored in *.jpg format on local machine. Ensure that the size of the scanned image is not more than 50kb. If the size of the file is more than 50kb, then adjust the settings of the scanner such as the dpi resolution, no. of colours etc., during the process of scanning.</p>
+      <br>
+      <h2>TERMS & CONDITIONS</h2>
+      <h5>GENERAL TERMS AND CONDITIONS (STUDENTS):</h5>
+      <div class="fakeimg">
+<img src="pass.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="200"></div>
+     
+      <p>Applications for all types of student passes shall be submitted online only. Manual submission will NOT be entertained except Free Passes.Ensure that photo size for upload is less than 100 KB and it shall be in JPEG/JPG format only.Ensure that all the fields are filled in correctly before submission.Registration number generated after submission, shall be noted for future reference .Bus pass will be issued only based on Registration Number.Application submitted online have to be certified online by the concerned educational institution. Student should ensure that submitted form is verified and certified by his/her institution online. Pass along with IDCARD will be issued only after certification by the institution.Student data cannot be modified, once institution has forwarded the application.In case of RTC Employee children student shall submit Copy of Employee ID CARD and orginal Employee Children Declaration Form certified by the unit officer concerned at the time of collecting IDCARD/PASS at counter.Passes shall be collected at the selected Center on the Date indicated.
+OBTAINING PASSES WITH ONLNE PAYMENT :
+Students as well as General Commuters can make online payment for bus pass.Online payments can be made using Credit/Debit/Rupay Cards/ Netbanking.All transactions on Internet/online payment are subject to the conditions stipulated by the Payment Gateway and subject to levy of charges, if any. TSRTC will levy a service charge of 2.5 % on the total bus pass fare.Payment Gateway Service charges will not be refunded for failure transactions .Note : For any issues regarding online payments / failures / refunds / submission of applications related to Hyderabad City Passes mail to ghzbuspasstsrtc@gmail.com and/or Contact 8008204216</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
